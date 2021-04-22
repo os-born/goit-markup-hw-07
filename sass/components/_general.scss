@@ -1,0 +1,55 @@
+// Базовые стили
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.conteiner {
+  width: 1200px;
+  padding: 0 15px 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.no-line a {
+  text-decoration: none;
+}
+
+.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}

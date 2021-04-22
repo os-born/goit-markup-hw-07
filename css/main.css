@@ -1,1 +1,91 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.conteiner {
+  width: 1200px;
+  padding: 0 15px 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.no-line a {
+  text-decoration: none;
+}
+
+.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.logo {
+  margin-right: 93px;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo__link {
+  display: inline-block;
+  padding: 24px 0;
+  text-decoration: none;
+}
+
+.logo--blue-part {
+  color: #2196f3;
+}
+
+.logo--black-part {
+  color: #212121;
+}
+
+.logo--white-part {
+  color: #ffffff;
+  background-color: yellowgreen;
+}
+/*# sourceMappingURL=main.css.map */
