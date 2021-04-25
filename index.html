@@ -343,6 +343,7 @@
                 </ul>
             </div>
         </section>
+    </main>
     <!--Футер-->
     <footer class="page-footer">
         <div class="footer-conteiner">
@@ -413,78 +414,80 @@
             </div>
         </div>
     </footer>
-    <div data-modal class="backdrop is-hidden">
-        <div class="modal">
-            <button data-modal-close type="button" class="modal-button">
-                <svg class="modal-close-logo" width="18px" height="18px">
-                    <use href="./images/icons.svg#modal-close-button"></use>
-                </svg>
+  -- Модальное окно -->
+<div data-modal class="backdrop is-hidden">
+    <div class="modal">
+        <button data-modal-close type="button" class="modal-button">
+            <svg class="modal-close-logo" width="18px" height="18px">
+                <use href="./images/icons.svg#modal-close-button"></use>
+            </svg>
+        </button>
+        <form class="form-order" novalidate>
+            <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+            <div class="form-block">
+                <label class="form-label">
+                    <span class="form-item-title">Имя</span>
+                    <span class="form-group">
+                        <input class="form-input" type="text" name="name" autocomplete="off"
+                            style="outline-style: none">
+                        <svg class="form-logo" width="18px" height="18px">
+                            <use href="./images/icons.svg#form-person-black"></use>
+                        </svg>
+                    </span>
+                </label>
+            </div>
+            <div class="form-block">
+                <label class="form-label">
+                    <span class="form-item-title">Телефон</span>
+                    <span class="form-group">
+                        <input class="form-input" type="tel" name="tel" autocomplete="off" style="outline-style: none">
+                        <svg class="form-logo" width="18px" height="18px">
+                            <use href="./images/icons.svg#form-phone-black"></use>
+                        </svg>
+                    </span>
+                </label>
+            </div>
+            <div class="form-block">
+                <label class="form-label">
+                    <span class="form-item-title">Почта</span>
+                    <span class="form-group">
+                        <input class="form-input" type="email" name="email" autocomplete="off"
+                            style="outline-style: none">
+                        <svg class="form-logo" width="18px" height="18px">
+                            <use href="./images/icons.svg#form-email-black"></use>
+                        </svg>
+                    </span>
+                </label>
+            </div>
+            <div class="form-block">
+                <label class="form-label">
+                    <span class="form-item-title">Комментарий</span>
+                    <span class="form-group">
+                        <textarea class="form-input-comment" rows="6" name="comment" style="outline-style: none"
+                            placeholder="Введите текст"></textarea>
+                    </span>
+                </label>
+            </div>
+            <div class="form-block-agreement">
+                <label>
+                    <span class="checkbox-group flex">
+                        <input type="checkbox" name="agreement" class="agreement-checkbox">
+                        <svg class="checkbox-icon">
+                            <use href="./images/icons.svg#checkbox-checked"></use>
+                        </svg>
+                        <span class="agreement-text">Соглашаюсь с рассылкой и принимаю</span>
+                        <a href="#" class="agreement-link">Условия договора</a>
+                    </span>
+                </label>
+            </div>
+            <button class="btn-form-submit" type="submit">
+                <span class="btn-form-submit-text">Отправить</span>
             </button>
-            <form class="form-order" novalidate>
-                <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-                <div class="form-block">
-                    <label class="form-label">
-                        <span class="form-item-title">Имя</span>
-                        <span class="form-group">
-                            <input class="form-input" type="text" name="name" autocomplete="off"
-                                style="outline-style: none">
-                            <svg class="form-logo" width="18px" height="18px">
-                                <use href="./images/icons.svg#form-person-black"></use>
-                            </svg>
-                        </span>
-                    </label>
-                </div>
-                <div class="form-block">
-                    <label class="form-label">
-                        <span class="form-item-title">Телефон</span>
-                        <span class="form-group">
-                            <input class="form-input" type="tel" name="tel" autocomplete="off" style="outline-style: none">
-                            <svg class="form-logo" width="18px" height="18px">
-                                <use href="./images/icons.svg#form-phone-black"></use>
-                            </svg>
-                        </span>
-                    </label>
-                </div>
-                <div class="form-block">
-                    <label class="form-label">
-                        <span class="form-item-title">Почта</span>
-                        <span class="form-group">
-                            <input class="form-input" type="email" name="email" autocomplete="off"
-                                style="outline-style: none">
-                            <svg class="form-logo" width="18px" height="18px">
-                                <use href="./images/icons.svg#form-email-black"></use>
-                            </svg>
-                        </span>
-                    </label>
-                </div>
-                <div class="form-block">
-                    <label class="form-label">
-                        <span class="form-item-title">Комментарий</span>
-                        <span class="form-group">
-                            <textarea class="form-input-comment" rows="6" name="comment" style="outline-style: none"
-                                placeholder="Введите текст"></textarea>
-                        </span>
-                    </label>
-                </div>
-                <div class="form-block-agreement">
-                    <label>
-                        <span class="checkbox-group flex">
-                            <input type="checkbox" name="agreement" class="agreement-checkbox">
-                            <svg class="checkbox-icon">
-                                <use href="./images/icons.svg#checkbox-checked"></use>
-                            </svg>
-                            <span class="agreement-text">Соглашаюсь с рассылкой и принимаю</span>
-                            <a href="#" class="agreement-link">Условия договора</a>
-                        </span>
-                    </label>
-                </div>
-                <button class="btn-form-submit" type="submit">
-                    <span class="btn-form-submit-text">Отправить</span>
-                </button>
-            </form>
-        </div>
+        </form>
     </div>
-    <script src="./js/modal.js">
-    </script>
+</div>
+<script src="./js/modal.js">
+</script>
 </body>
+
 </html>

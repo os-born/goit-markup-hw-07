@@ -14,24 +14,24 @@
   cursor: pointer;
   background-color: $accent-color;
   color: $primary-white-color;
+}
 
-  // Стили кнопки героя - Заказть услугу
+// Стили кнопки героя - Заказать услугу
 
-  &__hero {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 8px 31px;
-  }
+.button__hero {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 31px;
+}
 
-  // Стили кнопки подписаться в футере
+// Стили кнопки подписаться в футере
 
-  &__subscribe {
-    display: inline-flex;
-    margin-left: 10px;
-    justify-content: center;
-    align-items: center;
-  }
+.button__subscribe {
+  display: inline-flex;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .button__icon {
