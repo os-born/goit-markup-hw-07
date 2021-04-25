@@ -1,8 +1,8 @@
 .logo {
-  margin-right: 93px;
+  display: inline-flex;
   font-family: Raleway, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.24;
   letter-spacing: 0.03em;
@@ -21,8 +21,18 @@
     color: $title-text-color;
   }
 
+  &--headered {
+    margin-right: 93px;
+  }
+
+  // Футер-лого
+
   &--white-part {
     color: $primary-white-color;
-    background-color: yellowgreen;
+  }
+
+  &--footered {
+    padding-top: 0;
+    padding-bottom: 20px;
   }
 }

@@ -13,9 +13,9 @@
 <body>
     <!--Шапка сайта-->
     <header class="page-header">
-        <div class="header__conteiner">
+        <div class="header_conteiner">
             <nav class="nav">
-                <div class="logo">
+                <div class="logo logo--headered">
                     <a href="./index.html" class="logo__link">
                         <span class="logo--blue-part">Web</span>
                         <span class="logo--black-part">Studio</span>
@@ -215,76 +215,76 @@
         </div>
     </main>
 <!--Футер-->
-    <footer class="page-footer">
-        <div class="conteiner">
-            <div class="footer-flex flex">
-                <div class="address-conteiner no-line">
-                    <a href="./index.html" class="no-line"><span class="logo-part1">Web</span><span
-                            class="logo-footer">Studio</span></a>
-                    <address class="address">
-                        <ul class="address-list no-line">
-                            <li class="address-footer">г. Киев, пр-т Леси Украинки, 26</li>
-                            <li class="contacts-footer"><a href="mailto:info@example.com">info@example.com</a></li>
-                            <li class="contacts-footer"><a href="tel:+380991111111">+38 099 111 11 11</a></li>
-                        </ul>
-                    </address>
-                </div>
-                <div class="social-links">
-                    <p class="social-links-title">Присоединяйтесь</p>
-                    <ul class="social-links-list-footer flex">
-                        <li class="social-link-item">
-                            <a href="#" class="social-link">
-                                <svg class="social-logo-footer" width="20px" height="20px">
-                                    <use href="./images/icons.svg#icon-instagram-black-footer"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-link-item flex">
-                            <a href="#" class="social-link ">
-                                <svg class="social-logo-footer" width="20px" height="20px">
-                                    <use href="./images/icons.svg#icon-twitter-black-footer"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-link-item flex">
-                            <a href="#" class="social-link ">
-                                <svg class="social-logo-footer" width="20px" height="20px">
-                                    <use href="./images/icons.svg#icon-facebook-black-footer"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-link-item flex">
-                            <a href="#" class="social-link">
-                                <svg class="social-logo-footer" width="20px" height="20px">
-                                    <use href="./images/icons.svg#icon-linkedin-black-footer"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="form-subscribe">
-                    <p class="form-suscribe-title">Подпишитесь на рассылку</p>
-                    <div class="form-subscribe-box">
-                        <form class="flex">
-                            <label>
-                                <input 
-                                class="input-email" 
-                                type="email" 
-                                name="email" 
-                                autocomplete="off"
-                                placeholder="E-mail">
-                            </label>
-                            <button class="btn-subsribe flex" type="submit">
-                                <span class="btn-subscribe-text">Подписаться</span>
-                                <svg class="btn-icon">
-                                    <use href="./images/icons.svg#telegram-icon"></use>
-                                </svg>
-                            </button>
-                        </form>
-                    </div>
-                </div>
+   <footer class="page-footer">
+    <div class="footer-conteiner">
+        <div class="address__wrapper">
+            <div class="logo">
+                <a href="./index.html" class="logo__link logo--footered">
+                    <span class="logo--blue-part">Web</span>
+                    <span class="logo--white-part">Studio</span>
+                </a>
+            </div>
+            <address class="address">
+                <ul class="address__list">
+                    <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
+                    <li class="address__item"><a href="mailto:info@example.com"
+                            class="address__link">info@example.com</a></li>
+                    <li class="address__item"><a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+        <div class="socials-links socials-links--footered">
+            <p class="socials-links__title">Присоединяйтесь</p>
+            <ul class="socials-list socials-list--nopadding">
+                <li class="socials-list__item">
+                    <a href="#" class="socials-list__link socials-list__link--footered">
+                        <svg class="socials-list__logo" width="20px" height="20px">
+                            <use href="./images/icons.svg#icon-instagram-black-footer"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials-list__item">
+                    <a href="#" class="socials-list__link socials-list__link--footered">
+                        <svg class="socials-list__logo " width="20px" height="20px">
+                            <use href="./images/icons.svg#icon-twitter-black-footer"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials-list__item">
+                    <a href="#" class="socials-list__link socials-list__link--footered">
+                        <svg class="socials-list__logo" width="20px" height="20px">
+                            <use href="./images/icons.svg#icon-facebook-black-footer"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials-list__item">
+                    <a href="#" class="socials-list__link socials-list__link--footered">
+                        <svg class="socials-list__logo" width="20px" height="20px">
+                            <use href="./images/icons.svg#icon-linkedin-black-footer"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-form">
+            <p class="footer-form__title">Подпишитесь на рассылку</p>
+            <div class="footer-form__wrapper">
+                <form class="footer-form--flex">
+                    <label>
+                        <input class="footer-form__input" type="email" name="email" autocomplete="off"
+                            placeholder="E-mail">
+                    </label>
+                    <button class="button button__subscribe" type="submit">
+                        <span class="button__text">Подписаться</span>
+                        <svg class="button__icon">
+                            <use href="./images/icons.svg#telegram-icon"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 </body>
 </html>
