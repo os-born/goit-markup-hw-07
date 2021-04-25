@@ -11,7 +11,7 @@
   margin-left: auto;
 }
 
-.header_conteiner, .nav, .nav__list, .contacts__list, .icon__wrapper, .features__list, .production__list, .team__list, .socials-list, .partners .partners__list, .filter-button__list, .footer-form--flex {
+.header_conteiner, .nav, .nav__list, .contacts__list, .icon__wrapper, .features__list, .production__list, .team__list, .socials-list, .partners .partners__list, .portfolio-button__list, .footer-form--flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,11 +23,11 @@
           justify-content: center;
 }
 
-.logo__link, .nav__link, .contacts__link, .address__link {
+.logo__link, .nav__link, .contacts__link, .portfolio-card__link, .address__link {
   text-decoration: none;
 }
 
-.nav__list, .contacts__list, .features__list, .production__list, .team__list, .socials-list, .partners .partners__list, .filter-button__list, .address__list {
+.nav__list, .contacts__list, .features__list, .production__list, .team__list, .socials-list, .partners .partners__list, .portfolio-button__list, .portfolio-card__list, .address__list {
   list-style: none;
 }
 
@@ -536,15 +536,124 @@ ul {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filter-button__list {
+.portfolio-button__list {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
 }
 
-.filter-button__item + .filter-button__item {
+.portfolio-button__item + .portfolio-button__item {
   margin-left: 8px;
+}
+
+.portfolio-card__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio-card__item {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-card__item:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.portfolio-card__item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.card-picture {
+  display: block;
+}
+
+.card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.card:hover::before {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.card:hover .card__text--hover-overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.card::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateY(calc(100%));
+          transform: translateY(calc(100%));
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.card__text--hover-overlay {
+  position: absolute;
+  display: block;
+  width: 370px;
+  height: 294px;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateY(calc(100%));
+          transform: translateY(calc(100%));
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: left;
+  padding: 63px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.card__title {
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.card__description {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.card__border {
+  display: block;
+  padding: 20px 24px;
+  text-align: left;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .page-footer {

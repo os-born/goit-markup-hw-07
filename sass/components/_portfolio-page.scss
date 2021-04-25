@@ -8,7 +8,31 @@
   @extend %conteiner;
 }
 
-.filter-button__list {
+.portfolio-button__list {
   @extend %flex-centered;
   @extend %list-nomarked;
+}
+
+.portfolio-card__list {
+  display: flex;
+  @extend %list-nomarked;
+  flex-wrap: wrap;
+}
+
+.portfolio-card__item {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  transition: box-shadow $animation-var;
+}
+
+.portfolio-card__item:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.portfolio-card__item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.portfolio-card__link {
+  @extend %link-nolined;
 }
