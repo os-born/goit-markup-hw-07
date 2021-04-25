@@ -44,7 +44,7 @@
 // Стили фильтров страницы портфолио
 
 .filter-button {
-  transition: background-color $animation-var, color var$animation-var;
+  transition: background-color $animation-var, color $animation-var;
   padding: 6px 22px;
   text-align: center;
   font: inherit;
