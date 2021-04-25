@@ -1,0 +1,14 @@
+// Стили страницы портфолио
+
+.portfolio {
+  @extend %section;
+}
+
+.portfolio__conteiner {
+  @extend %conteiner;
+}
+
+.filter-button__list {
+  @extend %flex-centered;
+  @extend %list-nomarked;
+}
