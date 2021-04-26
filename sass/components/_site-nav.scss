@@ -31,11 +31,11 @@
     color: $title-text-color;
   }
 
-  &__link--active {
+  &__link--current {
     position: relative;
   }
 
-  &__link--active::after {
+  &__link--current::after {
     position: absolute;
     content: '';
     height: 4px;

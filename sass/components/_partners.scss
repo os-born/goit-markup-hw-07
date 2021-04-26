@@ -23,16 +23,16 @@
     @extend %list-nomarked;
   }
 }
-
-.partner__wrapper {
-  max-width: 170px;
-  height: 90px;
-}
-
-.partner {
+.partners__item {
   & + & {
     margin-left: 30px;
   }
+}
+
+.partner {
+  max-width: 170px;
+  height: 90px;
+
   &__link {
     display: flex;
     width: 170px;

@@ -1,6 +1,6 @@
 // Стили соц. сетей
 
-.socials-list {
+.social-list {
   @extend %flex-centered;
   @extend %list-nomarked;
   padding: 0 32px 30px;
@@ -11,7 +11,26 @@
     }
   }
 
-  &__link {
+  &--nopadding {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #afb1b8;
+  background-color: $primary-white-color;
+  fill: currentColor;
+  @extend %hovered-focused-bg;
+
+  &--footered {
     display: flex;
     width: 44px;
     height: 44px;
@@ -20,20 +39,13 @@
     border-radius: 50%;
     cursor: pointer;
     color: #afb1b8;
-    background-color: $primary-white-color;
+    background-color: rgba(255, 255, 255, 0.1);
     fill: currentColor;
     @extend %hovered-focused-bg;
   }
-
-  &--nopadding {
-    margin: 0;
-    padding: 0;
-  }
 }
 
-//   Стили соц. сетей футера
-
-.socials-links {
+.social-links {
   &__title {
     margin-bottom: 20px;
     //   margin-left: 70px;
@@ -50,27 +62,5 @@
     margin-left: 70px;
     align-self: flex-start;
     padding-top: 12px;
-  }
-}
-
-.socials-list {
-  &__link--footered {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    cursor: pointer;
-    color: #afb1b8;
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: currentColor;
-    @extend %hovered-focused-bg;
-  }
-
-  &__item {
-    & + & {
-      margin-left: 10px;
-    }
   }
 }
