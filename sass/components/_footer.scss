@@ -25,11 +25,14 @@
     padding-right: 16px;
   }
   &__item {
-    & + & {
-      margin-top: 7px;
-    }
+    margin-bottom: 7px;
     color: $primary-white-color;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
+
   &__link {
     @extend %link-nolined;
     @extend %hovered-focused;
@@ -63,6 +66,7 @@
     border-radius: 4px;
     font-family: Roboto, sans-serif;
     font-size: 16px;
+    color: $primary-white-color;
     background-color: $hero-background-color;
   }
 

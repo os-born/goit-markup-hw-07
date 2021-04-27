@@ -14,7 +14,7 @@
     }
   }
   &:hover {
-    .card__text--hover-overlay {
+    .card--hover-overlay {
       transform: translateY(0);
     }
   }
@@ -32,7 +32,7 @@
   }
 }
 
-.card__text--hover-overlay {
+.card--hover-overlay {
   position: absolute;
   display: block;
   width: 370px;
